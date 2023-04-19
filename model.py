@@ -71,7 +71,7 @@ class Transform(nn.Module):
         output = nn.Flatten(1)(xb)
         return output, matrix3x3, matrix64x64
 
-class PointNet(nn.Module):
+class PointNetPretrain(nn.Module):
     def __init__(self, classes = 10):
         super().__init__()
         self.transform = Transform()
